@@ -8,7 +8,7 @@ public class PruebaFactura {
 
         Scanner entrada = new Scanner(System.in);
 
-        // Pedir datos al usuario por consola
+
         System.out.print("Ingrese el número de pieza: ");
         String numero = entrada.nextLine();
 
@@ -21,11 +21,10 @@ public class PruebaFactura {
         System.out.print("Ingrese el precio por artículo: ");
         double precio = entrada.nextDouble();
 
-        // Crear el objeto Factura con los datos ingresados
         Factura factura = new Factura(numero, descripcion, cantidad, precio);
 
-        // Mostrar la factura
-        System.out.println("\n===== FACTURA =====");
+
+        System.out.println("\n FACTURA ");
         System.out.println("Número de pieza:  " + factura.getNumeroPieza());
         System.out.println("Descripción:      " + factura.getDescripcionPieza());
         System.out.println("Cantidad:         " + factura.getCantidad());
@@ -34,6 +33,6 @@ public class PruebaFactura {
 
         entrada.close();
 
-    } // fin de main
+    }
 
-} // fin de la clase PruebaFactura
+}
